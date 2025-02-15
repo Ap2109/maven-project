@@ -8,6 +8,7 @@ pipeline
         {agent { label 'MAVEN' }
             steps { 
                 git 'https://github.com/Ap2109/maven-project.git'
+                echo "Hello"
             }
         }
         stage ('validate the code')
