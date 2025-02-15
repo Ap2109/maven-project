@@ -38,17 +38,17 @@ pipeline
       }
     }
 
-   /* // CD part
+   // CD part
     stage ('deploy the code on tomcat')
     {
       steps 
       {
         sshagent(['DEVCICD']) 
         {
-          sh 'scp -o StrictHostKeyChecking=no webapp/target/webapp.war ec2-user@172.31.0.216:/usr/share/tomcat/webapps'
+          sh 'scp -o StrictHostKeyChecking=no webapp/target/webapp.war ec2-user@172.31.12.93:/usr/share/tomcat/webapps'
         }
       }
-    }*/
+    }
   }
 }
 
