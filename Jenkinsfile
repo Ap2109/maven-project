@@ -7,7 +7,7 @@ pipeline
         stage ('scm checkout')
         {agent { label 'MAVEN' }
             steps { 
-                git 'https://github.com/kumargaurav039/maven-project.git'
+                git 'https://github.com/Ap2109/maven-project.git'
             }
         }
         stage ('validate the code')
